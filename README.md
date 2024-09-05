@@ -13,6 +13,7 @@ make all
 #  Other make targets:
 #     make compiler - The compiler's headers. You can import the compiler into C++ using <cminusminus.hpp>
 #     make binary   - Command line binaries. Includes the cmm bin.
+#     make tests    - Run tests
 #     make all      - Everything
 #
 #     make install  - Installs binaries to /usr/local/bin/, headers to /usr/include/.

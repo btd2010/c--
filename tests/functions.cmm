@@ -1,0 +1,11 @@
+#include std
+
+fn printHi() void {
+    std.print("Hi");
+}
+
+fn main(args) int {
+    printHi();
+
+    return 0;
+}
