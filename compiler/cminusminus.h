@@ -16,3 +16,5 @@
 *   Authors: Ben Daws <ben@bendaws.net>
 *   Description: Main compiler binary.
 ***************************/
+
+char* version = "0.0.1-beta" // Call using "extern char* version" while importing cminusminus.h
