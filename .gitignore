@@ -1,0 +1,10 @@
+# Binaries
+*.exe
+*.out
+*.o
+*.bin
+
+# Notes extensions (see CONTRIBUTING.md)
+*.stickynote
+*.note
+*.notemd

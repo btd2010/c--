@@ -1,0 +1,12 @@
+# Detect C languages properly
+*.h linguist-language=C
+*.c linguist-language=C
+
+# All C++ file extensions
+*.hpp linguist-language=C++
+*.cpp linguist-language=C++
+
+# Stickynotes
+*.stickynote linguist-language=Markdown
+*.note linguist-language=Markdown
+*.notemd linguist-language=Markdown
