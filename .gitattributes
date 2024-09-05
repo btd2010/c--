@@ -10,3 +10,6 @@
 *.stickynote linguist-language=Markdown
 *.note linguist-language=Markdown
 *.notemd linguist-language=Markdown
+
+# C-- is a C variant
+*.cmm linguist-language=C

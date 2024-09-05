@@ -1,0 +1,6 @@
+#include std
+
+fn main(string args) int {
+    std.print("hello world");
+    return 0;
+}
