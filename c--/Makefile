@@ -7,7 +7,7 @@ all:
 compiler:
 	echo "We need password permissions to continue."
 	sudo echo "Password submitted"
-	cd compiler
+	cd src
 	sudo mkdir /usr/include/c--
 	sudo cp parse.h /usr/include/c--/parse.h
 	sudo cp c--.h /usr/include/c--/c--.h
@@ -17,15 +17,16 @@ compiler:
 binary:
 	echo "We need password permissions to continue."
 	sudo echo "Password submitted"
-	cd tools
+	cd tools/cli
 	gcc cli.cpp c--
 	sudo cp c-- /usr/local/bin/c--
 	cd ..
 	echo "Done: target tests"
 
 tests:
-	cd tests
+	cd tools/tests
 	c-- functions.cmm
 	c-- print.cmm
+	c-- verybig.cmm
 	cd ..
 	echo "Done: target tests"

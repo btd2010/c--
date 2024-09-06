@@ -34,7 +34,7 @@ int main(int argc, char *argv) {
     switch (flag1) {
         case "--version":
             printf("C-- utils version %s\n", CMM_VERSION_BIN);
-            printf("C-- compiler version %s\n", CMM_VERSION);
+            printf("C-- version %s\n", CMM_VERSION);
             printf("\nC--  Copyright (C) 2024  Ben Daws.\n");
             printf("This program comes with ABSOLUTELY NO WARRANTY;\n");
             printf("This is free software, and you are welcome to redistribute it\n");
