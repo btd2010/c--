@@ -17,7 +17,7 @@ jobs:
     - name: Move to c-- comp directory
       run: cd c--
     - name: Install dependencies
-      run: make compiler
+      run: make c--.h
 
     - name: Run check
       run: make check
