@@ -9,7 +9,8 @@ compiler:
 	sudo echo "Password submitted"
 	cd compiler
 	sudo mkdir /usr/include/c--
-	sudo cp cminusminus.h /usr/include/c--/cminusminus.h
+	sudo cp parse.h /usr/include/c--/parse.h
+	sudo cp c--.h /usr/include/c--/c--.h
 	cd ..
 	echo "Done: target compiler"
 

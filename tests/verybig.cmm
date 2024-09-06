@@ -1,0 +1,8 @@
+#include std
+#include math
+
+fun int main(args) {
+    std.print(math.huge());
+
+    return 0;
+}

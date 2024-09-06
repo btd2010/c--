@@ -1,10 +1,10 @@
 #include std
 
-fn printHi() void {
+fun void printHi() {
     std.print("Hi");
 }
 
-fn main(args) int {
+fun int main(args) {
     printHi();
 
     return 0;

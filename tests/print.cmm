@@ -1,6 +1,6 @@
 #include std
 
-fn main(string args) int {
+fun int main(string args) {
     std.print("hello world");
     return 0;
 }

@@ -12,9 +12,16 @@
 ********************************************************************/
 
 /***************************
-*   Name: bins.hpp
+*   Name: cminusminus.h
 *   Authors: Ben Daws <ben@bendaws.net>
-*   Description: Provides binary information
+*   Description: Header file for C-- compiler
 ***************************/
 
-char* binversion = "0.0.1-beta";
+// std
+#include <stdio.h>
+#include <stdlib.h>
+
+// local includes
+#include "parse.h"
+
+char* CMM_VERSION = "0.0.1-beta" // Call using "extern char* version" while importing cminusminus.h

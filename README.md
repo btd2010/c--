@@ -1,6 +1,6 @@
 ![C-- logo](lib/icons/cmm-150.png)
 # C-- ![Issues](https://img.shields.io/github/issues/btd2010/bs) ![PRs](https://img.shields.io/github/issues-pr/btd2010/bs) ![Version](https://img.shields.io/badge/version-0.0.1--beta-blue)
-C-- is a compiled, simple programming language mostly like C#, C++, and [Carbon](https://github.com/carbon-language/carbon-lang). I work on it in my free time so I can learn the programming languages I need to use faster and better.
+C-- is a compiled, simple, embeddable programming language mostly like C#, C++, and [Carbon](https://github.com/carbon-language/carbon-lang). I work on it in my free time so I can learn the programming languages I need to use faster and better.
 
 ## Installation
 You can build and install C-- over a Makefile:
@@ -34,6 +34,18 @@ fn main(string args) int {
 
   return 0;
 }
+```
+
+## Embedability
+C-- is controlled by the ``language.h`` header file. After installing C--, you can find it in:
+```bash
+/usr/include/c--/c--.h
+```
+
+To import the header, use C or C++. C-- is written in C so it is compatable with both languages.
+
+```c
+#include <c--/c--.h>
 ```
 
 ## License
