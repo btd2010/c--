@@ -1,0 +1,6 @@
+#include C "stdio.h" stdio
+#header std
+
+fun print(string output);
+
+#endheader std

@@ -1,0 +1,7 @@
+#header math
+
+fun int huge() {
+    return 1^1000;
+}
+
+#endheader math
