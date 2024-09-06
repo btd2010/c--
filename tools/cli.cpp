@@ -28,14 +28,19 @@ int main(int argc, char *argv) {
     // Checks argv for flags
     char *flag1 = argv[1];
 
-    if (flag1 == "--version") {
-        std::cout << "C-- utils version " << binversion << std::endl;
-        std::cout << "C-- compiler version " << version << std::endl;
-        std::cout << "\nprogram>  Copyright (C) <year>  <name of author>\n";
-        std::cout << "This program comes with ABSOLUTELY NO WARRANTY;\n";
-        std::cout << "This is free software, and you are welcome to redistribute it\n";
-        std::cout << "under certain conditions. See 'c-- --license' for the license.\n";
-    } else if (flag1 == "--license") {
-        std::cout << "Please visit https://www.gnu.org/licenses for the GNU GPL V3 License.\n";
+    switch (flag1) {
+        case "--version":
+            std::cout << "C-- utils version " << binversion << std::endl;
+            std::cout << "C-- compiler version " << version << std::endl;
+            std::cout << "\nprogram>  Copyright (C) <year>  <name of author>\n";
+            std::cout << "This program comes with ABSOLUTELY NO WARRANTY;\n";
+            std::cout << "This is free software, and you are welcome to redistribute it\n";
+            std::cout << "under certain conditions. See 'c-- --license' for the license.\n";
+            break;
+        case "--license":
+            std::cout << "Please visit https://www.gnu.org/licenses for the GNU GPL V3 License.\n";
+            break;
+        default:
+            std::cout << "Invalid flag given. See cmm --help.\n";
     }
 }
