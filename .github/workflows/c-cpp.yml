@@ -16,4 +16,4 @@ jobs:
     - name: CD
       run: cd c--
     - name: Build
-      run: make all
+      run: make
