@@ -1,6 +1,12 @@
 #include C "stdio.h" stdio
 #header std
 
-fun print(string output);
+fun print(string output) {
+  stdio.printf(output + "\n");
+}
+
+fun printr(string output) {
+  stdio.printf(output);
+}
 
 #endheader std
