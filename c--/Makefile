@@ -1,10 +1,10 @@
-all:
+all: all
 	make compiler # comps
 	make binary # tools
 	make tests # tests
 	echo "Done"
 
-compiler:
+compiler: c--.h
 	echo "We need password permissions to continue."
 	sudo echo "Password submitted"
 	cd src
@@ -14,7 +14,7 @@ compiler:
 	cd ..
 	echo "Done: target compiler"
 
-binary:
+binary: cli
 	echo "We need password permissions to continue."
 	sudo echo "Password submitted"
 	cd tools/cli
@@ -23,7 +23,7 @@ binary:
 	cd ..
 	echo "Done: target tests"
 
-tests:
+tests: print.cmm functions.cmm verybig.cmm
 	cd tools/tests
 	c-- functions.cmm
 	c-- print.cmm
